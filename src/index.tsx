@@ -1,0 +1,1 @@
+export { AudioWavesView } from './AudioWavesView';

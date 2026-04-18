@@ -1,0 +1,23 @@
+{
+  "cxxNamespace": ["audiowaves"],
+  "ios": {
+    "iosModuleName": "AudioWaves"
+  },
+  "android": {
+    "androidNamespace": ["audiowaves"],
+    "androidCxxLibName": "audiowaves"
+  },
+  "autolinking": {
+    "AudioWaves": {
+      "ios": {
+        "language": "swift",
+        "implementationClassName": "HybridAudioWaves"
+      },
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "HybridAudioWaves"
+      }
+    }
+  },
+  "ignorePaths": ["node_modules"]
+}
