@@ -26,6 +26,11 @@ buildscript {
   }
 }
 
+repositories {
+  google()
+  mavenCentral()
+  maven { url 'https://jitpack.io' }
+}
 def reactNativeArchitectures() {
   def value = rootProject.getProperties().get("reactNativeArchitectures")
   return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
@@ -112,7 +117,15 @@ android {
   }
 }
 
+
 dependencies {
   implementation "com.facebook.react:react-android"
   implementation project(":react-native-nitro-modules")
+
+
+    // required libs
+    implementation 'com.github.lincollincol:amplituda:2.2.2'
+    implementation 'androidx.media3:media3-exoplayer:1.4.1'
+    implementation 'androidx.media3:media3-common:1.4.1'
 }
+

@@ -17,6 +17,16 @@
         "language": "kotlin",
         "implementationClassName": "HybridAudioWaves"
       }
+    },
+    "AudioWaveform": {
+      "ios": {
+        "language": "swift",
+        "implementationClassName": "HybridAudioWaveform"
+      },
+      "android": {
+        "language": "kotlin",
+        "implementationClassName": "HybridAudioWaveform"
+      }
     }
   },
   "ignorePaths": ["node_modules"]
